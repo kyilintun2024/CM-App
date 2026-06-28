@@ -30,6 +30,7 @@ jobs:
       - name: Install dependencies
         shell: pwsh
         run: | 
+          choco install wget -y
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install google-api-python-client>=2.0.0 google-auth-httplib2>=0.1.0 google-auth-oauthlib>=0.4.0
           python -m pip install yagmail chardet wheel oauth2client
